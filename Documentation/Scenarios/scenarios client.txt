@@ -1,0 +1,35 @@
+Cas Client
+
+Nom : Jouer
+Acteur(s) : Client
+Description : La réalisation d’une action doit être possible pour un client
+Auteur : Yannick ALCARAZ
+Date(s) : 30/12/2020
+
+Pré-conditions : 
+4 clients doivent être connectés afin de pouvoir lancer une partie
+
+Démarrage : 
+L’utilisateur a demandé de lancer le jeu
+
+DESCRIPTION:
+Le scénario nominal :
+
+
+1.	L’utilisateur ouvre un terminal au sein de l’IDE
+2.	L’utilisateur créer un client
+3.	Le client se connecte à la partie
+4.	Le client attend un signal du serveur pour jouer
+5.	Le client réceptionne un signal provenant du serveur lui indiquant qu’il peut jouer
+6.	Le client choisit une action à effectuer
+7.	Le client indique au serveur l’action qu’il souhaite effectuer
+8.	Le client gagne la partie
+9.	Le client se déconnecte
+
+Les scénarios alternatifs :
+8a. Le client n’arrive pas à finir une partie car l’ensemble des cartes ont été utilisés et le nombre de points de victoire à atteindre pour gagner n’a pas été atteint
+
+Post-conditions : Aucun
+
+
+

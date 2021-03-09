@@ -1,0 +1,36 @@
+Cas Serveur
+
+Nom : Jouer
+Acteur(s) : Serveur
+Description : La creation d'une partie doit être possible pour un serveur
+Auteur : Yannick ALCARAZ
+Date(s) : 30/12/2020
+
+Pré-conditions : 
+Un serveur doit être présent afin de pouvoir accueillir les clients et lancer la partie                                        
+
+Démarrage : 
+L’utilisateur a demandé de lancer le jeu
+
+DESCRIPTION:
+Le scénario nominal :
+
+
+1.	L’utilisateur ouvre un terminal au sein de l’IDE
+2.	L’utilisateur créer un serveur
+3.	Le serveur est en attente de client
+4.	Le serveur a accueilli les 4 clients et lance la partie 
+5.	Le serveur indique au client qu'il peut jouer
+6.	Le serveur reçoit l'action que le client souhaite réaliser
+7.	Le serveur effectue l'action    
+8.	Le serveur termine la partie car un client a atteint le nombre de point de victoire à atteindre
+9.      Le serveur envoi le resultat de la partie a chaque client
+10.	Le serveur s'arrete
+
+Les scénarios alternatifs :
+9a. Le serveur termine la partie et affiche les statistiques de la partie 
+
+Post-conditions : Aucun
+
+
+

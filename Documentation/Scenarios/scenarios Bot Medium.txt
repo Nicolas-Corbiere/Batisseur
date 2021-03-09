@@ -1,0 +1,55 @@
+Cas Bot Medium
+
+Nom : Lancer le jeu
+Acteur(s) : Commanditaire
+Description : Le lancement du jeu doit être possible pour un commanditaire
+Auteur : Yannick ALCARAZ
+Date(s) : 10/11/2020
+
+Pré-conditions : L’utilisateur doit avoir le jeu
+Démarrage : L’utilisateur a demandé de lancer le jeu
+
+DESCRIPTION:
+Le scénario nominal :
+
+1. Le système lance le jeu
+2. Le système lance la partie
+3. Le système affiche le déroulement de la partie.
+4. Le Bot Medium attend son tour
+5. Le systeme indique que c'est au Bot Medium de jouer
+6. Le Bot Medium recupere la carte batiment qui a le plus de point de victoire
+7 Le systeme lui retire une action
+8. Le Bot Medium recupere la carte ouvrier avec la carte qui a le plus de bois/ ou de pierre /ou de savoir/ ou de tuile
+9 Le systeme lui retire une action
+10. Le Bot Medium affecte l'ouvrier au batiment
+11 Le systeme lui retire une action 
+12. Le Bot Medium gagne la partie                                           
+13. Le système affiche le gagnant de la partie.
+14. Le systeme affiche les statistiques des 1000 parties
+15 Le systeme vérifi le nombre de partie effectué , si < 1000 --> Retour 2
+16. L’utilisateur quitte le jeu.
+17. Le système éteint le jeu
+
+Les scénarios alternatifs :
+
+* L’utilisateur décide de quitter le jeu. Retour 17
+10a. Le Bot Medium pioche des ecus. Retour 10aa.
+10aa. Si il pioche 1 ecu , le systeme lui retire 1 action . Retour 12a
+      Si il pioche 3 ecu , le systeme lui retire 2 actions. Retour 12a
+      Si il pioche 6 ecu , le systeme lui retire 3 actions. Retour 12a
+12a. Le Bot Medium ne gagne pas la partie et termine son tour. Retour 4
+                                                       
+
+Post-conditions : Aucun
+
+
+COMPLEMENTS :
+Ergonomie 
+
+L'affichage du déroulement d'une partie devra afficher 
+l'ensemble des actions réaliser par les bot dans la partie
+
+Performance attendue 
+
+Le déroulement de la partie doit se terminer par l'affichage 
+du gagnant de la partie
